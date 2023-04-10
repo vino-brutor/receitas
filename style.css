@@ -1,0 +1,313 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Open sans' ,sans-serif;
+}
+header{
+  width: 100%;
+  background-color: #DC143C;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 600;
+}
+.logo{
+  color: #FEE12B;
+  text-decoration: none;
+  font-size: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 250px;
+  transition: 0.3s;
+}
+.titulo:hover{
+  transition: 0.3s;
+  text-decoration: underline yellow;
+}
+a{
+  text-decoration: none;
+  color:  #FEE12B;
+}
+
+i{
+  font-size: 50px;
+}
+.nav{
+  display: flex;
+}
+.link{
+  height: 100%;
+  padding: 20px 10px 20px 10px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+.link:hover{
+  background-color: #a30122d8;
+  transition: 0.4s;
+  cursor: pointer;
+}
+main{
+  background-color: #fafaf7;
+  color: #DC143C;
+}
+.main-contato{
+  display: flex;
+}
+.container-contato{
+  display: flex;
+  flex-direction: column;
+}
+.contato{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: #DC143C;
+  font-size: 50px;
+}
+.insta-image{
+  width: 80px;
+}
+.insta{
+  display: flex;
+  justify-content: center;
+}
+.container-home{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main-home{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+.pizzasimg-home{
+  display: flex;
+  gap: 30px;
+}
+.pizza-img{
+  width: 400px;
+  height: 250px;
+  padding: 3px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 10px 29px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 10px 29px 3px rgba(0,0,0,0.75);
+  box-shadow: 2px 10px 29px 3px rgba(0,0,0,0.75);
+  border: transparent 3px solid;
+  transition: 0.2s;
+}
+.pizza-img:hover , .pizzaimg-cardapio:hover{
+  border:#FEE12B 3px solid;
+  transition: 0.2s;
+}
+.titulo-home{
+  font-size: 70px;
+  font-weight: 700
+}
+.buttons-home{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 90px;
+
+}
+.button-home{
+  background-color: #DC143C;
+  color: #FEE12B;
+  border: transparent;
+  border-radius: 10px;
+  width: 320px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+.button-home:hover , .botao-cardapio:hover , .botao-promocoes:hover {
+  border: #FEE12B 5px solid;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.copyright{
+  color: gray;
+  font-size: 10px;
+  margin-right: 1200px;
+}
+.main-cardapio{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.cardapio{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 250px;
+  gap: 45px 55px;
+}
+.tele-entrega{
+  font-size: 50px;
+  font-weight: 600;
+}
+.pizza-nome{
+  font-size: 30px;
+  font-weight: 600;
+  width: 400px;
+}
+.pizza-descricao{
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+.pizzaimg-cardapio{
+  padding: 3px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 10px 29px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 10px 29px 3px rgba(0,0,0,0.75);
+  box-shadow: 2px 10px 29px 3px rgba(0,0,0,0.75);
+  border: transparent 3px solid;
+  transition: 0.2s;
+  width: 400px;
+  height: 223px;
+}
+
+.botao-cardapio{
+  background-color: #DC143C;
+  color: #FEE12B;
+  border: transparent 5px solid;
+  border-radius: 10px;
+  padding: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.4s;
+  width: 600px;
+  margin-top: 30px;
+}
+.linkcontato-cardapio{
+  padding: 20px;
+}
+.main-promocoes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.promocoes{
+  display: grid;
+  gap: 60px;
+  grid-template-areas:
+  "a a"
+  "b c"
+  ;
+}
+.promocao-1{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  grid-area: a;
+  background-color: #fff023;
+  border-radius: 30px;
+  padding: 30px 15px;
+}
+.foto-promocao1{
+  height: 400px;
+  border-radius: 30px;
+  transition: 0.2s;
+}
+
+.descricao-promocao1{
+  font-size: 90px;
+  width: 600px;
+  font-weight: 700;
+  text-align: left;
+  background-color: ##fff023;
+  border-radius: 30px;
+}
+.preco-promocao1{
+  color:#fff023;
+  background-color: #DC143C;
+  text-align: center;
+  border-radius: 15px;
+  padding: 0px 10px;
+  margin-left: 160px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #FEE12B;
+  transition: 0.2s;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #ff3300;
+  transition: 0.2s;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+.promocao-2{
+  grid-area: b;
+  text-align: center;
+  background-color: #fff023;
+  border-radius: 30px;
+  padding: 20px 0px;
+}
+.promocao-3{
+  grid-area: c;
+  text-align: center;
+  background-color: #fff023;
+  border-radius: 30px;
+  padding: 20px 0px;
+}
+.descricao-promocao2 , .descricao-promocao3{
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px;
+}
+.foto-promocao2 , .foto-promocao3{
+  width: 500px;
+  height: 250px;
+  border-radius: 30px;
+  padding: 2px;
+  border: transparent 4px solid;
+  transition: 0.2s;
+}
+.foto-promocao2:hover  , .foto-promocao3:hover{
+  border:#FEE12B 4px solid;
+  transition: 0.2s;
+}
+.preco-promocao2 , .preco-promocao3{
+  color:#fbff00;
+  background-color: #DC143C;
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+.lista-promocao{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 30px 0px 0px 0px;
+  margin-left: 35px;
+}
+.botao-promocoes{
+  background-color: #DC143C;
+  color: #FEE12B;
+  border: transparent 5px solid;
+  border-radius: 10px;
+  padding: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.4s;
+  width: 600px;
+  margin-top: 15px;
+}
+span{
+  color: #fcd600;
+}
